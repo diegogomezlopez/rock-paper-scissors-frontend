@@ -1,4 +1,4 @@
-<table>
+<table class="default">
   <thead>
     <tr>
       <th>Player1</th>
@@ -17,3 +17,22 @@
 
 <button (click) = 'play()'>PLAY</button>
 <button (click) = 'restart()'>RESTART</button>
+
+<table>
+  <thead>
+  <tr>
+    <th>Player1 Wins</th>
+    <th>Player2 Wins</th>
+    <th>TotalDraws</th>
+    <th>RoundsPlayed</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    {{roundHistory.player1Wins}}
+    {{roundHistory.player2Wins}}
+    {{roundHistory.totalDraws}}
+    {{roundHistory.roundsPlayed}}
+  </tr>
+  </tbody>
+</table>
