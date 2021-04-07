@@ -8,9 +8,9 @@
   </thead>
   <tbody>
     <tr *ngFor = "let result of resultsTable">
-      {{result.player1Move}}
-      {{result.player2Move}}
-      {{result.result}}
+      <td>{{result.player1Move}}</td>
+      <td>{{result.player2Move}}</td>
+      <td>{{result.result}}</td>
     </tr>
   </tbody>
 </table>
@@ -29,10 +29,10 @@
   </thead>
   <tbody>
   <tr>
-    {{roundHistory.player1Wins}}
-    {{roundHistory.player2Wins}}
-    {{roundHistory.totalDraws}}
-    {{roundHistory.roundsPlayed}}
+    <td>{{roundHistory.player1Wins}}</td>
+    <td>{{roundHistory.player2Wins}}</td>
+    <td>{{roundHistory.totalDraws}}</td>
+    <td>{{roundHistory.roundsPlayed}}</td>
   </tr>
   </tbody>
 </table>
